@@ -60,7 +60,7 @@ var imagenes ={
 
 }
 var audio ={
-  ff:"./Musica/retrorunner.mp3",
+  ff:"./Musica/retrorunner_1.mp3",
   fin: src ="./Musica/32 - All Gone (Game Over).mp3",
 }
 
@@ -481,7 +481,7 @@ function update(){
 
 function checkLevel(){
 //final fantasy
-    if(kane.score < 33){
+    if(kane.score < 16){
     fondoff.image.src = imagenes.fondoff
     fondtop.image.src = imagenes.fondotop
     //personaje
@@ -497,7 +497,7 @@ function checkLevel(){
     malosFrames = 80
    //musica
 }
-  else if(kane.score >= 33 && kane.score<= 73 ){
+  else if(kane.score >= 16 && kane.score<= 32 ){
 
     //castlevania
     //board
@@ -518,7 +518,7 @@ function checkLevel(){
   
   }
 //zelda
-  else if(kane.score >= 74 && kane.score<= 110){
+  else if(kane.score >= 33 && kane.score<= 49){
     fondoff.image.src = imagenes.zfondo
     fondtop.image.src = imagenes.ztop
     //personaje
@@ -529,13 +529,13 @@ function checkLevel(){
     //items
     arrayItemsImages = zitems
 
-    itemVel = 3
-    malovel = 5
+    itemVel = 4
+    malovel = 6
     itemFrames = 40
-    malosFrames = 60
+    malosFrames = 50
   }
   //contra
-  else if(kane.score >= 111 && kane.score<= 1000 ){
+  else if(kane.score >= 50 && kane.score<= 1000 ){
     fondoff.image.src = imagenes.cfondo
     fondtop.image.src = imagenes.ctop
     //personaje
@@ -546,7 +546,7 @@ function checkLevel(){
     //items
     arrayItemsImages = citems
 
-    itemVel = 4
+    itemVel = 5
     malovel = 7
     itemFrames = 50
     malosFrames = 40

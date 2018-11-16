@@ -54,6 +54,14 @@ var imagenes ={
   gaiden2: src ="./porra/gaiden2.png",
   boble1: src="./porra/boble1.png",
   boble2: src="./porra/boble2.png",
+  perro1: src="./porra/dog1.png",
+  perro2: src="./porra/dog2.png",
+  scorpion1: src="./porra/scrorp1.png",
+  scorpion2: src="./porra/scrorp2.png",
+  sith1: src="./porra/sith1.png",
+  sith2: src="./porra/sith2.png",
+  iki1: src="./porra/iki1.png",
+  iki2: src="./porra/iki2.png",
  
 
 
@@ -307,8 +315,8 @@ function Marlene(){
 }
 function Boo(){
   Rydia.call(this)
-  this.x = 10
-  this.y =105
+  this.x = 55
+  this.y =95
   this.image = new Image()
   this.image.src = imagenes.boo1
   this.image2 = new Image()
@@ -360,6 +368,42 @@ function Boble(){
   this.image.src = imagenes.boble1
   this.image2 = new Image()
   this.image2.src = imagenes.boble2
+}
+function Dog(){
+  Rydia.call(this)
+  this.x = 70
+  this.y = 460
+  this.image = new Image()
+  this.image.src = imagenes.perro1
+  this.image2 = new Image()
+  this.image2.src = imagenes.perro2
+}
+function Iki(){
+  Rydia.call(this)
+  this.x = 5
+  this.y = 120
+  this.image = new Image()
+  this.image.src = imagenes.iki1
+  this.image2 = new Image()
+  this.image2.src = imagenes.iki2
+}
+function Sith(){
+  Rydia.call(this)
+  this.x = 20
+  this.y = 400
+  this.image = new Image()
+  this.image.src = imagenes.sith1
+  this.image2 = new Image()
+  this.image2.src = imagenes.sith2
+}
+function Scorpion(){
+  Rydia.call(this)
+  this.x = 80
+  this.y = 215
+  this.image = new Image()
+  this.image.src = imagenes.scorpion1
+  this.image2 = new Image()
+  this.image2.src = imagenes.scorpion2
 }
 
 
@@ -433,6 +477,10 @@ var mach = new Macho()
 var hipo = new Hipo()
 var gaid = new Gaiden()
 var boble = new Boble()
+var perro = new Dog()
+var scorp = new Scorpion()
+var sith = new Sith()
+var iki = new Iki()
 
 //main functions
 function start(){
@@ -470,6 +518,10 @@ function update(){
   mach.draw()
   gaid.draw()
   boble.draw()
+  perro.draw()
+  sith.draw()
+  iki.draw()
+  scorp.draw()
   checkCharacterCollition()
   generateItems()
   drawItems()
